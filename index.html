@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ajay Singaravelu | Full Stack & Business-Focused Engineer</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <!-- Google Font: Montserrat -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" />
   <style>
+    /* Color Palette Variables */
     :root {
       --sage-green: #9caf88;
       --azure: #0053ba;
@@ -15,6 +17,7 @@
       --text-muted: #555;
       --card-bg: #ffffff;
     }
+    /* Global Styles */
     body {
       font-family: 'Montserrat', sans-serif;
       background-color: var(--bg-light);
@@ -23,6 +26,7 @@
       padding: 0;
     }
     header {
+      /* Blue-to-green diagonal gradient background */
       background: linear-gradient(135deg, var(--azure), var(--sage-green));
       padding: 60px 20px 40px;
       text-align: center;
@@ -31,14 +35,18 @@
     header h1 {
       font-size: 2.8em;
       margin: 0;
+      /* Text shadow for contrast on multicolor background */
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     }
     header p {
       font-size: 1.2em;
       margin-top: 10px;
+      /* Slight text shadow for contrast */
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
     .container {
       max-width: 900px;
-      margin: -40px auto 0;
+      margin: -40px auto 0;  /* pull up to overlap header */
       background-color: var(--card-bg);
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       border-radius: 15px;
@@ -50,25 +58,28 @@
       margin-bottom: 25px;
       color: var(--text-muted);
     }
-    h2 {
+    /* Section Titles */
+    h2.section-title {
       color: var(--azure);
       border-left: 6px solid var(--blood-red);
       padding-left: 12px;
-      margin-bottom: 15px;
+      margin: 25px 0 15px 0;
       font-size: 1.4em;
     }
     ul {
       padding-left: 20px;
+      margin: 0 0 15px 0;
     }
     li {
       margin-bottom: 8px;
       line-height: 1.6;
     }
-    .cta {
+    /* Call-to-Action section styles */
+    section.cta {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
-    .cta a {
+    section.cta a {
       display: inline-block;
       margin: 8px;
       padding: 12px 22px;
@@ -79,7 +90,7 @@
       font-weight: bold;
       transition: background 0.3s;
     }
-    .cta a:hover {
+    section.cta a:hover {
       background-color: var(--azure);
     }
     footer {
@@ -89,60 +100,71 @@
       color: var(--text-muted);
       font-size: 0.9em;
     }
+    /* Responsive Adjustments */
     @media (max-width: 768px) {
-      .container { margin: -30px 15px 0; padding: 25px; }
-      header h1 { font-size: 2em; }
+      .container {
+        margin: -30px 15px 0;
+        padding: 25px;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      /* Stack the contact links vertically on small screens */
+      section.cta a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Ajay Singaravelu</h1>
-    <p>Digital Engineer | Full‑Stack & Big Data | Cloud & AI Integration | Python | C# | Angular | WSDL | TypeScript | XML | Airtable | CI/CD | Operational Support 24x7</p>
+    <p>Digital Engineer | Full-Stack &amp; Big Data | Cloud &amp; AI Integration | Python | C# | Angular | WSDL | TypeScript | XML | Airtable | CI/CD | Operational Support 24x7</p>
   </header>
 
   <div class="container">
-    <p class="intro">Hi! I'm Ajay, a forward-thinking full-stack engineer focused on 
-      creating robust, scalable, and future-ready solutions for enterprises and startups alike. 
+    <p class="intro">
+      Hi! I'm Ajay, a forward-thinking full-stack engineer focused on creating robust, scalable, and future-ready solutions for enterprises and startups alike. 
       My passion is building with data, optimizing performance, and leveraging the power of the cloud. 
-      I thrive on innovation, collaboration, and continuous learning. Let's connect and create something impactful!</p>
+      I thrive on innovation, collaboration, and continuous learning. Let's connect and create something impactful!
+    </p>
 
     <section>
       <h2 class="section-title">Professional Expertise</h2>
       <ul>
-        <li>Data Engineering & Advanced Analytics</li>
-        <li>Full Stack Development & Modern Web Applications</li>
+        <li>Data Engineering &amp; Advanced Analytics</li>
+        <li>Full Stack Development &amp; Modern Web Applications</li>
         <li>Cloud Solutions (AWS, Azure, Databricks)</li>
-        <li>Scalable Systems & Microservices</li>
+        <li>Scalable Systems &amp; Microservices</li>
         <li>DevOps, CI/CD, and Automation</li>
       </ul>
     </section>
+
     <section>
-      <h2>Versatile Core Tech Skillset with proficiency across a broad range of Biz Stack platforms & tools 🧠</h2>
+      <h2 class="section-title">Versatile Core Tech Skillset with proficiency across a broad range of Biz Stack platforms &amp; tools 🧠</h2>
       <ul>
-        <li>Highly skilled in .NET and API development, demonstrated expertise in ASP.NET Core Web API | Entity Framework Core | LINQ 
-          | RESTful API and gRPC | Clean Architecture (SOLID) | OAuth 2.0 / JWT authentication | SignalR</li>
-        <li>With experience in front-end and user experience (UX) development, my creative outlets fuel curiosity and inspire fresh perspectives. using React.js 
-          | Angular | Blazor | TypeScript | HTML5/CSS3 | Web performance optimization</li>
-        <li>Able to proficiently adapt to changing environments of cloud proficiency with expertise in Azure DevOps (CI/CD, Boards, Repos) | Azure Functions 
-          | AWS Lambda (C#) | Kubernetes | Docker | Terraform | Infrastructure as Code (IaC). </li>
-        <li>Performed hands-on duties in analytics and integration, such as Power BI | SSIS/SSRS | and Microservices 
-          | MVC and MVVM architectures, | Real-time data integration</li>
-        <li>Open to feedback and collaborative input. Well-versed in Agile (Scrum/Kanban) | Git and GitHub Actions | Jira 
-          | Technical documentation and communication</li>
+        <li>Highly skilled in .NET and API development, with expertise in ASP.NET Core Web API, Entity Framework Core, LINQ, RESTful services (REST/gRPC), Clean Architecture (SOLID), OAuth 2.0/JWT authentication, and SignalR.</li>
+        <li>Experienced in front-end development and UX, using React.js, Angular, Blazor, TypeScript, HTML5/CSS3, with a focus on web performance optimization.</li>
+        <li>Proficient in cloud and DevOps tools such as Azure DevOps (CI/CD, Boards, Repos), Azure Functions, AWS Lambda (C#), Kubernetes, Docker, Terraform, and Infrastructure as Code (IaC).</li>
+        <li>Hands-on experience with data analytics and integration: Power BI, SSIS/SSRS, microservices architecture, MVC/MVVM patterns, and real-time data integration.</li>
+        <li>Agile team player familiar with Scrum/Kanban, Git/GitHub Actions, Jira, and strong in technical documentation and communication.</li>
       </ul>
     </section>
 
-  <div style="text-align:left;">
-      <h2 class="section-title">Call to Action & Engagement</h2>
+    <section class="cta">
+      <h2 class="section-title">Call to Action &amp; Engagement</h2>
       <a href="mailto:10ajay.ss30@gmail.com">Email</a>
-      <a> Ph# +1-(571) 697-7874</a>
-    <a href="https://www.linkedin.com/in/reach2ajay-connectsyou/">LinkedIn</a>
+      <a href="tel:+15716977874">Phone: +1 (571) 697-7874</a>
+      <a href="https://www.linkedin.com/in/reach2ajay-connectsyou/" target="_blank" rel="noopener">LinkedIn</a>
     </section>
   </div>
 
   <footer>
     &copy; 2025 Ajay Singaravelu · Designed for impact
   </footer>
+
 </body>
 </html>
